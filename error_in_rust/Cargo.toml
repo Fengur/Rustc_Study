@@ -1,0 +1,13 @@
+[package]
+name = "error_in_rust"
+version = "0.1.0"
+authors = ["Fengur <fengur@qq.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+#如果你想要在 release 模式中 panic 时直接终止：
+[profile.release]
+panic = 'abort'
+[dependencies]
